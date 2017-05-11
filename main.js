@@ -1,6 +1,3 @@
-
-
-
 function pieChart() {
   var margin = {top: 20, right: 20, bottom: 20, left: 20},
       width = 600,
@@ -16,7 +13,6 @@ function pieChart() {
   function chart(selection) {
     var radius = Math.min(width, height) / 2;
     selection.each(function(data) {
-      console.log(data);
       var pie = d3.pie()
           .sort(null)
           .value(function(d) { return d[Object.keys(d)[2]]; });
